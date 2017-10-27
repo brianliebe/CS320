@@ -1,0 +1,23 @@
+Name: Brian Liebe
+BU ID: bliebe1
+B-Number: B00559498
+
+% Complete: 100%
+Extra Credit: Yes
+
+Explanation of Extra Credit:
+
+The idea doesn't really work in practice, but I think it could work in theory.
+
+1. Creates a table which contains a sort of tagging (name of address and a value 0-3)
+2. Fills a vector up to a certain size, until it is full with the first addresses.
+3. Once full, the oldest values will start being replaced if they haven't been used recently.
+4. Addresses used recently will be re-added with the value changed depending on the branch result.
+
+So it works similar to the bimodal, two-bit design, except entries are removed if they're old.
+It does take a while to run, however, but a better implementation could yield decent results.
+
+I'm defaulting it to a 16-entry table (which is way too small) because it takes a very small amount
+of time to run. In theory, it would work much better at 2048 entries, but this takes much too long 
+to run, and therefore won't work with this submission (since you guys need to run the program and
+have it not take 20 mins).
