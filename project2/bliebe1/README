@@ -1,0 +1,18 @@
+Author: Brian Liebe
+BU ID: bliebe1
+B Number: B00559498
+
+What Works: Everything
+What Doesn't Work: Nothing
+
+Extra Credit: 
+
+I implemented a least frequently used (LFU)replacement 
+policy for the extra credit. When a tag is found, I add
+it to a vector, and set its frequency to 1. When it is
+accessed again, I increase the frequency. When deciding
+which tags to replace, I choose the tag that corresponds
+to the lowest frequency. I found that this is more 
+efficient than both other replacement policies under the
+correct cicumstances/program.
+
